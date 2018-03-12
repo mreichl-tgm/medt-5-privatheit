@@ -22,7 +22,7 @@
         .reveal { font-size: 32px; height: 70%; margin-top: 5%; }
         .reveal .slide-number {
             margin: 1em;
-            font-size: 0.8em;
+            font-size: 24px;
             font-family: inherit;
             background-color: transparent;
             color: inherit;
@@ -42,7 +42,7 @@
 <div class="background"></div>
 <div class="reveal">
     <div class="slides">
-        <section>
+        <section><!-- Title -->
             <h2>Privatheit im digitalen Raum</h2>
             <p>Markus Reichl & Samuel Schober</p>
             <small>
@@ -51,7 +51,7 @@
                 </script>
             </small>
         </section>
-        <section>
+        <section><!-- Definitions -->
             <h3>Wichtige Begriffe</h3>
             <br/>
             <table>
@@ -63,10 +63,10 @@
                 </tr>
             </table>
             <br/>
-            <p>Privatheit ist ein Menschenrecht!</p>
+            <p><b>Privatheit ist ein Menschenrecht!</b></p>
         </section>
         <section>
-            <h3>Ist unterteilt auf</h3>
+            <h3>Unterteilt in</h3>
             <br/>
             <table>
                 <tbody>
@@ -79,7 +79,7 @@
                 </tbody>
             </table>
             <br/><br/>
-            <h4><p>"Das Recht auf informationelle Selbstbestimmung"</p></h4>
+            <h4>„Das Recht auf informationelle Selbstbestimmung“</h4>
         </section>
         <section>
             <h3>Personenbezogene Daten</h3>
@@ -92,7 +92,7 @@
                 <li>Sensible Daten</li>
             </ul>
             <br/><br/>
-            <h4><p>"Angaben über Betroffene, durch welche ihre Identität bestimmt oder bestimmbar ist."</p></h4>
+            <h4>„Angaben über Betroffene, durch welche ihre Identität bestimmt oder bestimmbar ist.“</h4>
         </section>
         <section>
             <h3>Sensible Daten</h3>
@@ -140,27 +140,46 @@
                 <li>Personen werden ohne Zustimmung gefilmt</li>
             </ul>
         </section>
+        <section id="schutz">
+            <h2>Schutz der Privatheit</h2>
+            <p>Wie werden private Daten geschützt?</p>
+        </section>
+        <section id="schutz-staat">
+            <h3>Schutz durch den Gesetzgeber</h3>
+            <h4>EU Datenschutz Grundverordnung (DSGVO)</h4>
+            <ul>
+                <li>Datenschutz durch Design</li>
+                <li>Pflicht zum Schutz personenbezogener Daten</li>
+                <li>Information für Betroffene</li>
+                <li>Hohe Strafen</li>
+            </ul>
+        </section>
+        <section id="schutz-selbst">
+            <h3>Selbstschutz</h3>
+            <ul>
+                <li>Information</li>
+                <li>Nutzung einfacher Dienste</li>
+                <li>Open Source</li>
+            </ul>
+        </section>
         <section>
-            <h3>Quellen</h3>
-            <br/>
+            <iframe width="100%" height="600px" data-src="https://privacytools.io"></iframe>
+        </section>
+        <section id="fragestellung-1">
+            <h3>Fragestellung I</h3>
+            <p>Darf die Privatheit verletzt werden, um die Sicherheit der Allgemeinheit zu gewährleisten?</p>
+        </section>
+        <section id="fragestellung-2">
+            <h3>Fragestellung 2</h3>
+            <p>Ist ein absoluter Schutz der Privatheit, sinnvoll oder sogar notwendig?</p>
+        </section>
+        <section>
+            <h3>Quellen</h3><br/>
             <ul>
                 <li><a href="https://www.privacytools.io/">privacytools.io</a></li>
                 <li><a href="https://unsplash.com/photos/yekGLpc3vro">unsplash.com</a></li>
                 <li><a href="http://www.vs.inf.ethz.ch/publ/se/AuszugPrivatheit.pdf">vs.inf.ethz.ch</a></li>
                 <li><a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=bundesnormen&Gesetzesnummer=10001597">ris.bka.gv.at</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Gesetzgebung</h3>
-            <br/>
-
-        </section>
-        <section>
-            <h3>Quellen</h3>
-            <br/>
-            <ul>
-                <li><a href="https://www.privacytools.io/">privacytools.io</a></li>
-                <li><a href="https://unsplash.com/photos/yekGLpc3vro">unsplash.com</a></li>
             </ul>
         </section>
     </div>
@@ -174,6 +193,8 @@
     // - https://github.com/hakimel/reveal.js#configuration
     // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
+        width: 1280,
+        height: 700,
         center: false,
         controls: false,
         slideNumber: "h.v/t",
